@@ -45,7 +45,7 @@ export default function Chat() {
 
   const outputRef = useRef<HTMLDivElement>(null);
   const [hydrated, setHydrated] = useState(false);
-  const API_URL = process.env.API_URL;
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
   useEffect(() => {
     let initialSessions: ChatSession[] = [];
 
